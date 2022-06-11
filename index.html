@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="Images/logo.png" type="image/x-icon">
+    <title>FWP</title>
+    <style>
+        body {
+            margin: 0;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url("Images/bg0.jpg");
+            background-repeat: repeat;
+            background-size: 100%;
+            color: white;
+        }
+
+        .header {
+            padding: 0px;
+            text-align: center;
+        }
+
+        #navbar {
+            overflow: hidden;
+            background-image: url("Images/bg0.jpg");
+            background-size: cover;
+        }
+
+        #navbar a {
+            float: left;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 8px 0px;
+            text-decoration: none;
+            font-size: 30px;
+            width: 25%;
+            font-weight: 600;
+        }
+
+        #navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: black;
+        }
+
+        #navbar a.active {
+            background-color: rgb(255, 102, 0);
+            color: black;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        iframe {
+            display: block;
+            background: white;
+            border: solid 2px white;
+            height: 100vh;
+            width: 100%;
+        }
+
+        h2 {
+            background-color: rgb(255, 102, 0);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>FUNDAMENTALS OF WEB PROGRAMMING</h1>
+        <img src="Images/icon.png" alt="Logo" style="padding-bottom: 20px;">
+    </div>
+
+    <div id="navbar">
+        <a class="active" href="index.html">HOME</a>
+        <a href="HTML/Html.html">HTML</a>
+        <a href="HTML/Css.html">CSS</a>
+        <a href="HTML/Js.html">JAVASCRIPT</a>
+    </div>
+
+    <div class="content">
+        <hr>
+        <h2>HTML</h2>
+        <hr><br>
+
+        <div style="display: flex;">
+            <img src="Images/html.png" alt="Html" style="padding: 15px;">
+            <p style="margin: 50px;">The HyperText Markup Language or HTML is the standard markup language for
+                documents designed to be
+                displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and
+                scripting languages such as JavaScript.</p>
+        </div>
+
+        <hr>
+        <h2>CSS</h2>
+        <hr><br>
+
+        <div style="display: flex;">
+            <p style="margin: 50px;">Cascading Style Sheets is a style sheet language used for describing the
+                presentation of a document
+                written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web,
+                alongside HTML and JavaScript.</p>
+            <img src="Images/css.png" alt="Css" style="padding: 15px;">
+        </div>
+
+        <hr>
+        <h2>JAVASCRIPT</h2>
+        <hr><br>
+
+        <div style="display: flex;">
+            <img src="Images/js.png" alt="JavaScript" style="padding: 15px;">
+            <p style="margin: 50px;">JavaScript, often abbreviated JS, is a programming language that is one of the core
+                technologies of the
+                World Wide Web, alongside HTML and CSS. Over 97% of websites use JavaScript on the client side for web
+                page behavior, often incorporating third-party libraries.</p>
+        </div>
+
+        <br><hr>
+        
+        <div class="footer">
+            <h2>ABOUT ME</h2><hr><br><br><br>
+            <table align="center" width="100%" border="2px" bordercolor="white" cellpadding="10px" cellspacing="5px">
+                <tr>
+                    <th>NAME</th>
+                    <th>CLASS</th>
+                    <th>ROLL NUMBER</th>
+                </tr>
+                <tr align="center">
+                    <td>Rajbir Singh</td>
+                    <td>BCA - 1</td>
+                    <td>7092 - 21</td>
+                </tr>
+            </table><br><br><br>
+            <hr><br>
+        </div>
+    </div>
+
+</body>
+<script>
+    window.onscroll = function () { myFunction() };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
+
+</html>
