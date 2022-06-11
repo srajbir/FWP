@@ -1,0 +1,19 @@
+<html>
+<style>
+body {
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 101, 168);
+}
+</style>
+<body align="center">
+
+<br>
+<h2>Shopping for your business?</h2>
+See how Apple at work can help.<br><br>
+<a href="javascript:void(0)">Learn more ></a>
+
+</body>
+</html>

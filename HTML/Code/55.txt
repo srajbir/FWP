@@ -1,0 +1,32 @@
+<html>
+<style>
+body{
+    font-size: 25px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(184, 184, 184);
+    padding: 12px 16px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+<body>
+
+<div class="dropdown">
+<span>Dropdown Menu</span>
+<div class="dropdown-content">
+    <p>List 1</p>
+    <p>List 2</p>
+    <p>List 3</p>
+</div>
+</div>
+
+</body>
+</html>

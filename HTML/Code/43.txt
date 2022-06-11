@@ -1,0 +1,19 @@
+<html>
+<style>
+body {
+    background: url("../../Images/tree.png") top left no-repeat;
+    padding: 15px;
+    background-size: 150px, 390px;
+    background-color: #5d9ab2;
+}
+</style>
+<body>
+
+<div style="width: 60%;float: right;background-color:#d0f0f6;padding: 10px;border: black 1px solid;">
+    <h1>Hello World!</h1>
+    <p>This example contains some advanced CSS methods you may not have learned yet. But, we will explain these
+    methods in a later chapter in the tutorial.</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+<style>
+body {
+    background-color: rgb(233, 183, 216);
+    color: rgb(243, 32, 95);
+    font-size: 20px;
+}
+h2 {
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 34px;
+}
+</style>
+<body align="center">
+
+<br><h2>Heading</h2>
+The pain itself is important to the main adipisicing elite, For whom.<br>
+
+</body>
+</html>

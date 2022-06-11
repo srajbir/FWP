@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>Formatting Documents</title>
+</head>
+
+<body>
+    <h1>heading 1</h1>
+    <h2>heading 2</h2>
+    <h3>heading 3</h3>
+    <h4>heading 4</h4>
+    <h5>heading 5</h5>
+    <h6>heading 6</h6>
+    <p>This is a para. This is a para. This is a para. This is a para.
+        This is a para. This is a para. This is a para. This is a para.
+        This is a para. This is a para. This is a para. This is a para.
+        This is a para. This is a para. This is a para. This is a para.</p>
+
+    this is line<br>break.<br><br>
+    This is a line using hr tag<br>
+    <hr size="10px" width="20%" color="red">
+</body>
+
+</html>

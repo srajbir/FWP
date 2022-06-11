@@ -1,0 +1,15 @@
+<html>
+<style>
+div {
+    width: 200px;
+    height: 200px;
+}
+</style>
+<body>
+
+<div style="background-color:red;"></div><br>
+<div style="background-color:darkviolet; margin-left: 200px;"></div><br>
+<div style="background-color:pink; margin-left: 400px;"></div>
+
+</body>
+</html>

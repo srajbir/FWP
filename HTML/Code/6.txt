@@ -1,0 +1,20 @@
+<html>
+<style>
+div {
+    border: black solid 2px;
+    text-align: center;
+    display: block;
+    margin-right: 8px;
+    margin-bottom: 0px;
+    float: left;
+}
+</style>
+<body>
+
+<div>
+    <img src="../../Images/img.jpg" width="150px">
+    <h2>Rajbir Singh</h2>
+</div>
+
+</body>
+</html>

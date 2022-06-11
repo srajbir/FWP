@@ -1,0 +1,41 @@
+<html>
+<style>
+span.a {
+    display: inline;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;
+    background-color: yellow;
+}
+span.b {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;
+    background-color: yellow;
+}
+span.c {
+    display: block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;
+    background-color: yellow;
+}
+</style>
+<body>
+
+<h3>display: inline</h3>
+    <div>it's time<span class="a">it's time</span> 
+    <span class="a">sterilized</span> enhanced monitoring procedures.</div>
+<h3>display: inline-block</h3>
+    <div>it's time<span class="b">it's time</span> 
+    <span class="b">sterilized</span> enhanced monitoring procedures.</div>
+<h3>display: block</h3>
+    <div>it's time<span class="c">it's time</span> 
+    <span class="c">sterilized</span> enhanced monitoring procedures.</div>
+
+</body>
+</html>

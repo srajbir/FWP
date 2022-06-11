@@ -1,0 +1,28 @@
+<html>
+<style>
+.a {
+    color: rgb(0, 196, 186);
+    font-size: 40px;
+}
+.b {
+    color: rgb(0, 143, 136);
+    font-size: 21px;
+}
+.c {
+    color: rgb(0, 54, 52);
+    font-size: 17px;
+}
+span {
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+</style>
+<body>
+
+<center>
+<br><br><span class="a">Get In Touch</span><br><br><br>
+<span class="b">The pain itself is love, not the environment.</span><br><br><br>
+<span class="c">The pain itself is love, in one, just as it loves. Phasellus members of the earth. Until it was worth it, to decorate it.</span>
+</center>
+
+</body>
+</html>

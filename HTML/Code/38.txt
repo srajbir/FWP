@@ -1,0 +1,31 @@
+<html>
+<style>
+h1,h3 {
+    color: rgb(0, 143, 136);
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+img {
+    border-radius: 50%;
+    width: 100px;
+    padding: 10px;
+}
+</style>
+<body>
+
+<div style="display: inline-block;position: relative;width: 80%;margin-left: 50px;">
+<center><h1>My Skills</h1><br><br></center>
+<div style="display: inline;float: left;">
+    <img src="../../Images/img1.jpg" style="float: left;" align="left">
+    <h3>Lorem Ipsum</h3>
+    The pain is the love itself The entrance to the urn, it was unconventional. The Bureau for, before bed,
+    as a vehicle to ride.
+</div><br><br><br><br><br><br><br><br>
+<div style="display:inline;float: right;">
+    <img src="../../Images/img2.jpg" style="float: right;" align="right">
+    <h3>Thank Him for Pain</h3>
+    The pain itself is the love Even the eu, drink sometimes, the lake one's goals. Curabitur wisi, or eu,
+    makeup for.
+</div></div>
+
+</body>
+</html>

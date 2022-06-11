@@ -1,0 +1,19 @@
+<html>
+<style>
+div {
+    width: 100px;
+    height: 100px;
+    margin: 100px;
+    background: green;
+    transition: transform 3s;
+}
+div:hover {
+    transform: rotate(180deg);
+}
+</style>
+<body>
+
+<div></div>
+
+</body>
+</html>

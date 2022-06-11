@@ -1,0 +1,18 @@
+<html>
+
+<script>
+    var a = 3, b = 4, c = 5;
+    function func() {
+        if (a > b && a > c) {
+            document.write(a + " is the biggest");
+        } else if (b > c && b > a) {
+            document.write(b + " is the biggest");
+        } else if (c > a && c > b) {
+            document.write(c + " is the biggest");
+        }
+    }
+    document.write("A = " + a + "<br>B = " + b + "<br>C = " + c + "<br>")
+    func();
+</script>
+
+</html>

@@ -1,0 +1,67 @@
+<html>
+<style>
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: black;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(170, 170, 170);
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: rgb(134, 134, 134);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+<body>
+
+<div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+<div class="dropdown">
+<button class="dropbtn">Menu</button>
+<div class="dropdown-content">
+    <a href="#"> Link to A </a>
+    <a href="#"> Link to B </a>
+    <a href="#"> Link to C </a>
+</div></div></div>
+
+</body>
+</html>

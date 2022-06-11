@@ -1,0 +1,19 @@
+<html>
+<style>
+div{
+    background-color: red;
+    color: white;
+    display: inline;
+    padding: 6px 30px;
+    font-size: 12px;
+    font-family:'Lucida Sans Regular','Lucida Grande','Lucida Sans Unicode',Geneva,Verdana,sans-serif;
+}
+</style>
+<body>
+
+<br><div>
+Shop early for the best selection of holiday favrouites. Shop Now >
+</div>
+
+</body>
+</html>

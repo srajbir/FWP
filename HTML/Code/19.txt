@@ -1,0 +1,42 @@
+<html>
+<style>
+body {
+    background-color: rgb(233, 183, 216);
+    font-size: 18px;
+    margin: 10px;
+    color: white;
+}
+h2 {
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    margin: 10px 0px;
+}
+div {
+    background-color: rgb(119, 0, 255);
+    display: inline-block;
+    border-radius: 8px;
+    padding: 20px;
+    padding-right: 50px;
+}
+span{
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 48%;
+    margin-left: 420px;
+}
+</style>
+<body>
+
+<br><div>
+    Projects - Branding<br>
+    <h2>MAKE IT LIVE</h2>
+    - The pain itself, the pain is to be implemented in the<br>
+    main adipisic process. They follow by messages, and sometimes<br>
+    by some reason, when those who praise it at the time of those<br>
+    accusing it, never say it, are bound to it!<br><br><br><br>
+    <span>$37</span>
+</div>
+
+</body>
+</html>

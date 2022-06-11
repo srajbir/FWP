@@ -1,0 +1,28 @@
+<html>
+<style>
+body {
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+input {
+    background-color: rgb(0, 68, 146);
+    border: none;
+    color: white;
+    padding: 9px 34px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 26px;
+    cursor: pointer;
+}
+</style>
+<body>
+
+<br>
+<font color="red">New</font><br><br>
+<font size="5">MacBook pro</font><br>
+<h1>Supercharged for pros.</h1>
+<font color="grey" size="4">From $1999</font><br><br>
+<input type="button" value="Buy">
+
+</body>
+</html>
