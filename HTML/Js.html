@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../Images/logo.png" type="image/x-icon">
+    <title>FWP</title>
+    <style>
+        body {
+            margin: 0;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url("../Images/bg0.jpg");
+            background-repeat: repeat;
+            background-size: 100% ;
+            color: white;
+        }
+
+        .header {
+            padding: 0px;
+            text-align: center;
+        }
+
+        #navbar {
+            overflow: hidden;
+            background-image: url("../Images/bg0.jpg");
+            background-size: cover;
+        }
+
+        #navbar a {
+            float: left;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 8px 0px;
+            text-decoration: none;
+            font-size: 30px;
+            width: 25%;
+            font-weight: 600;
+        }
+
+        #navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: black;
+        }
+
+        #navbar a.active {
+            background-color: rgb(255, 102, 0);
+            color: black;
+        }
+
+        .content {
+            padding: 60px;
+            padding-top: 20px;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        h2 {
+            background-color: rgb(255, 102, 0);
+            text-align: center;
+        }
+
+        input {
+            border: 4px solid rgb(255, 102, 0);
+            color: rgb(255, 102, 0);
+            padding: 6px 12px;
+            font-size: 22px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        input:hover {
+            background-color: rgb(255, 102, 0);
+            color: white;
+        }
+
+        .sidenav {
+            height: calc(100vh - 50px);
+            margin-top: 50px;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            background-color: black;
+            overflow-x: hidden;
+            transition: 0.5s;
+            overflow-y: scroll;
+            padding-top: 0px;
+        }
+
+        .sidenav a {
+            padding: 8px 24px;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            display: block;
+        }
+
+        .sidenav a:hover {
+            color: rgb(255, 102, 0);
+        }
+
+        .sidenav .closebtn {
+            font-size: 36px;
+        }
+
+        .fix{
+            font-size:28px;
+            cursor:pointer;
+            position:sticky;
+            padding:0px 7px;
+            top: 52px;
+            border: 2px solid white;
+            margin-right: 20px;
+        }
+        #mySidenav::-webkit-scrollbar {
+            display: none;
+        }
+
+        #mySidenav {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>FUNDAMENTALS OF WEB PROGRAMMING</h1>
+        <img src="../Images/icon.png" alt="Logo" style="padding-bottom: 20px;">
+    </div>
+
+    <div id="navbar">
+        <a href="../index.html">HOME</a>
+        <a href="Html.html">HTML</a>
+        <a href="Css.html">CSS</a>
+        <a class="active" href="Js.html">JAVASCRIPT</a>
+    </div><br><br>
+    
+    <div style="padding:0px 20px;">
+        <hr>
+        <h2>JavaScript Programs</h2><a name="1">
+        <hr><br>
+    </div>
+
+    <div class="fix" style="float:right;" onclick="openNav()">&#9776;</div>
+    
+    <div class="content">
+        <ol>
+            <li>Write a JavaScript function to convert the temperature value from Celsius to Fahrenheit. Assume that the temperature value is 100.<br><br>
+                <a href="j1.html"><input type="button" value="OUTPUT"></a>
+            </li>
+            <br><br><br><a name="2">
+            <hr><br>
+            
+            <li>Find the area of a triangle where lengths of the three of its sides are 5, 6, 7.<br><br>
+                <a href="j2.html"><input type="button" value="OUTPUT"></a>
+            </li>
+            <br><br><br><a name="3">
+            <hr><br>
+
+            <li>Check whether a given year is a leap year.<br><br>
+                <a href="j3.html"><input type="button" value="OUTPUT"></a>
+            </li>
+            <br><br><br><a name="4">
+            <hr><br>
+
+            <li>Write a JavaScript program to calculate days left until next Diwali.<br><br>
+                <a href="j4.html"><input type="button" value="OUTPUT"></a>
+            </li>
+            <br><br><br><a name="5">
+            <hr><br>
+
+            <li>Write a JavaScript program to get the website URL.<br><br>
+                <a href="j5.html"><input type="button" value="OUTPUT"></a>
+            </li>
+            <br><br><br><a name="6">
+            <hr><br>
+
+            <li>Write a JavaScript program to compute the sum of the two given integers. If the two values are same, then returns triple their sum.<br><br>
+                <a href="j6.html"><input type="button" value="OUTPUT"></a>
+            </li>
+            <br><br><br><a name="7">
+            <hr><br>
+
+            <li>Check whether a given positive number is a multiple of 3 or a multiple of 7.<br><br>
+                <a href="j7.html"><input type="button" value="OUTPUT"></a>
+            </li>
+            <br><br><br><a name="8">
+            <hr><br>
+
+            <li>Write the JavaScript code to enter the month number and display respective month name and days.<br><br>
+                <a href="j8.html"><input type="button" value="OUTPUT"></a>
+            </li>
+            <br><br><br><a name="9">
+            <hr><br>
+
+            <li>Write a program to check for vowel characters, spaces and consonants using switch statement.<br><br>
+                <a href="j9.html"><input type="button" value="OUTPUT"></a>
+            </li>
+            <br><br><br><a name="10">
+            <hr><br>
+
+            <li>Write a JavaScript program to find the greatest among three numbers. Display the greater number with appropriate message using if else.<br><br>
+                <a href="j10.html"><input type="button" value="OUTPUT"></a>
+            </li>
+            <br><br><br>
+            <hr><br>
+        </ol>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+    <div style="position:sticky;top:0;float: right;">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#1" class="closebtn">&#8679</a>
+        <a href="#10" class="closebtn">&#8681</a>
+    </div>
+        <a href="#1" style="padding:20px">Program 1</a>
+        <a href="#2" style="padding:20px">Program 2</a>
+        <a href="#3" style="padding:20px">Program 3</a>
+        <a href="#4" style="padding:20px">Program 4</a>
+        <a href="#5" style="padding:20px">Program 5</a>
+        <a href="#6" style="padding:20px">Program 6</a>
+        <a href="#7" style="padding:20px">Program 7</a>
+        <a href="#8" style="padding:20px">Program 8</a>
+        <a href="#9" style="padding:20px">Program 9</a>
+        <a href="#10" style="padding:20px">Program 10</a>
+    </div>
+    
+
+</body>
+<script>
+    window.onscroll = function () { myFunction() };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "200px";
+    }
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+
+</html>

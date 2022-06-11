@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../Images/logo.png" type="image/x-icon">
+    <title>FWP</title>
+    <style>
+        body {
+            margin: 0;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url("../Images/bg0.jpg");
+            background-repeat: repeat;
+            background-size: 100% ;
+            color: white;
+        }
+
+        .header {
+            padding: 0px;
+            text-align: center;
+        }
+
+        #navbar {
+            overflow: hidden;
+            background-image: url("../Images/bg0.jpg");
+            background-size: cover;
+        }
+
+        #navbar a {
+            float: left;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 8px 0px;
+            text-decoration: none;
+            font-size: 30px;
+            width: 25%;
+            font-weight: 600;
+        }
+
+        #navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: black;
+        }
+
+        #navbar a.active {
+            background-color: rgb(255, 102, 0);
+            color: black;
+        }
+
+        .content {
+            padding: 60px;
+            padding-top: 20px;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        h2 {
+            background-color: rgb(255, 102, 0);
+            text-align: center;
+        }
+
+        .input2 {
+            border: 4px solid green;
+            color: green;
+            padding: 20px 40px;
+            font-size: 22px;
+            cursor: pointer;
+            font-weight: 600;
+            margin: 1px;
+        }
+
+        .input2:hover {
+            background-color: green;
+            color: white;
+        }
+
+        .sidenav {
+            height: calc(100vh - 50px);
+            margin-top: 50px;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            background-color: black;
+            overflow-x: hidden;
+            transition: 0.5s;
+            overflow-y: scroll;
+            padding-top: 0px;
+        }
+
+        .sidenav a {
+            padding: 8px 24px;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            display: block;
+        }
+
+        .sidenav a:hover {
+            color: rgb(255, 102, 0);
+        }
+
+        .sidenav .closebtn {
+            font-size: 36px;
+        }
+
+        .fix{
+            font-size:28px;
+            cursor:pointer;
+            position:sticky;
+            padding:0px 7px;
+            top: 52px;
+            border: 2px solid white;
+            margin-right: 20px;
+        }
+        #mySidenav::-webkit-scrollbar {
+            display: none;
+        }
+
+        #mySidenav {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        span{
+            color: rgb(255, 102, 0);
+            font-weight: 600;
+        }
+
+        h3{
+            text-decoration: underline;
+        }
+
+        ul{
+            list-style-type: disc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>FUNDAMENTALS OF WEB PROGRAMMING</h1>
+        <img src="../Images/icon.png" alt="Logo" style="padding-bottom: 20px;">
+    </div>
+
+    <div id="navbar">
+        <a href="../index.html">HOME</a>
+        <a class="active" href="Html.html">HTML</a>
+        <a href="Css.html">CSS</a>
+        <a href="Js.html">JAVASCRIPT</a>
+    </div><br><br>
+
+    <div style="padding:0px 20px;">
+        <hr>
+        <h2>Introduction to HTML</h2><a name="1">
+        <hr><br>
+    </div>
+        
+    <div class="fix" style="float:right;" onclick="openNav()">&#9776;</div>
+        
+    <div class="content">  
+        <h3>What is HTML?</h3>
+        <ul>
+            <li>HTML stands for Hyper Text Markup Language.</li><br>
+            <li>HTML is the standard markup language for creating Web pages.</li><br>
+            <li>HTML describes the structure of a Web page.</li><br>
+            <li>HTML consists of a series of elements.</li><br>
+            <li>HTML elements tell the browser how to display the content.</li><br>
+            <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", etc.</li><br>
+        </ul>
+
+        <br><hr><br>
+
+        <h3>What Are HTML Tags?</h3>
+        <ul>
+            <li>Tags are used to mark up the start of an HTML element and they are usually enclosed in angle brackets.<br>
+                An example of a tag is: <span>&lt;h1&gt;</span>.</li><br>
+            <li>Most tags must be opened <span>&lt;h1&gt;</span> and closed <span>&lt;/h1&gt;</span> in order to function.</li><br>
+        </ul>
+            
+        <br><hr><br>            
+            
+        <h3>What are HTML Attributes?</h3>
+        <ul>
+            <li>Attributes contain additional pieces of information. Attributes take the form of an opening tag and additional info is placed inside.</li><br>
+            <li>An example of an attribute is:<br>
+                <span>&lt;img src="mydog.jpg" alt="A photo of my dog."&gt;</span></li><br>
+            <li>In this instance, the image source (<span>src</span>) and the alt text (<span>alt</span>) are attributes of the img tag.</li><br>
+        </ul>
+            
+        <br><hr><br>    
+            
+        <h3>Basic Construction of an HTML Page:</h3>
+        These tags should be placed underneath each other at the top of every HTML page that you create.<br><br>
+        <center>
+        <table align="center" width="90%" border="2px" bordercolor="white" cellpadding="15px" cellspacing="0px">
+            <tr><th><span>HTML</span></th><td>This tag signals that from here on we are going to write in HTML code.</td></tr>
+            <tr><th><span>HEAD</span></th><td>This is where all the metadata for the page goes — stuff mostly meant for search engines and other computer programs.</td></tr>
+            <tr><th><span>BODY</span></th><td>This is where we add the content. This includes text, images, tables, forms and everything we see.</td></tr>
+            <tr><th><span>TITLE</span></th><td>This is where we insert the page name as it will appear at the top of the browser window or tab.</td></tr>
+        </table><br>
+        <img src="../Images/struc.jpg" style="border: 5px black solid;width: 60%;text-align:center;display: block;"><a name="b1">
+        </center><br>
+
+        <br><hr><br>
+
+        <center><a href="h1.html"><input type="button" value="Example: Structure of HTML" class="input2"></a><br></center>
+    </div>
+
+    <div style="padding:0px 20px;">
+        <hr>
+        <h2>Formatting Documents</h2><a name="2">
+        <hr><br>
+    </div>
+
+    <div class="content">
+        <h3>How to Add HTML Headings To Your Web Page?</h3>
+        <ul>
+            <li>The HTML <body> is where we add the content which is designed for viewing by human eyes.</li><br>
+            <li>In HTML, headings are written in the following elements:</li>
+            <ol>
+                <li><span>&lt;h1&gt;</span> and <span>&lt;/h1&gt;</span></li>
+                <li><span>&lt;h2&gt;</span> and <span>&lt;/h2&gt;</span></li>
+                <li><span>&lt;h3&gt;</span> and <span>&lt;/h3&gt;</span></li>
+                <li><span>&lt;h4&gt;</span> and <span>&lt;/h4&gt;</span></li>
+                <li><span>&lt;h5&gt;</span> and <span>&lt;/h5&gt;</span></li>
+                <li><span>&lt;h6&gt;</span> and <span>&lt;/h6&gt;</span></li>
+            </ol><br>
+            <li>As you might have guessed <span>&lt;h1&gt;</span> and <span>&lt;h2&gt;</span> should be used for the most important titles, while the remaining tags should be used for sub-headings and less important text.</li><br>
+            <li>Example: <span>&lt;h1&gt;Welcome to My Page&lt;/h1&gt;</span></li><br>
+        </ul>
+
+        <br><hr><br>
+
+        <h3>How To Add Text In HTML as a para?</h3>
+        <ul>
+            <li>Adding text to our HTML page is simple using an element opened with the tag <span>&lt;p&gt;</span> which creates a new paragraph.</li>
+            <br><li>We place all of our regular text inside the element <span>&lt;p&gt;</span> and <span>&lt;/p&gt;</span>.</li><br>
+        </ul>
+
+        <br><hr><br>
+
+        <h3>Other Key Elements:</h3>
+        When we write text in HTML, we also have a number of other elements we can use to make text appear in a certain way.<br><br>
+        <table align="center" width="90%" border="2px" bordercolor="white" cellpadding="10px" cellspacing="0px">
+            <tr><th><u>Element</u></th><th><u>Name</u></th><th><u>Purpose</u></th><th><u>Attributes</u></th></tr>
+            <tr><th><span>br</span></th><td>Break Tag</td><td>adds a line break</td><td>none</td></tr>
+            <tr><th><span>hr</span></th><td>Horizontal Rule</td><td>adds a horizontal line</td><td>width,size,color</td></tr>
+            <tr><th><span>center</span></th><td>Center Tag</td><td>align everything center within it</td><td>none</td></tr>
+            <tr><th><span>span</span></th><td>Span Tag</td><td>used to adjust text within it</td><td>fontface,size,color</td></tr>
+            <tr><th><span>spacer</span></th><td>Spacer Tag</td><td>adds horizontal or vertical space</td><td>type,size</td></tr>
+            <tr><th><span>pre</span></th><td>Preformatted Text</td><td>display text as it is written</td><td>none</td></tr><a name="b2">            
+        </table><br>
+
+        <br><hr><br>
+
+        <center><a href="h2.html"><input type="button" value="Example: Formatting Documents" class="input2"></a><br></center>
+    </div>
+
+    <div style="padding:0px 20px;">
+        <hr>
+        <h2>Text Styles</h2><a name="3">
+        <hr><br>
+    </div>
+
+    <div class="content">
+        <h3>Text Formatting Tags:</h3>
+        <table align="center" width="90%" border="2px" bordercolor="white" cellpadding="10px" cellspacing="0px">
+            <tr><th><u>Element</u></th><th><u>Name</u></th><th><u>Purpose</u></th></tr>
+            <tr><th><span>b</span></th><td>Bold</td><td>Highlight important information</td></tr>
+            <tr><th><span>strong</span></th><td>Strong</td><td>Similarly to bold, to highlight key text</td></tr>
+            <tr><th><span>i</span></th><td>Italic</td><td>To denote text</td></tr>
+            <tr><th><span>em</span></th><td>Emphasised</td><td>Usually used as image captions</td></tr>
+            <tr><th><span>mark</span></th><td>Marked Text</td><td>Highlight the background of the text</td></tr>
+            <tr><th><span>small</span></th><td>Small Text</td><td>To shrink the text</td></tr>
+            <tr><th><span>strike</span></th><td>Striked Out Text</td><td>To place a horizontal line across the text</td></tr>
+            <tr><th><span>u</span></th><td>Underlined Text</td><td>Used for links or text highlights</td></tr>
+            <tr><th><span>ins</span></th><td>Inserted Text</td><td>Displayed with an underline to show an inserted text</td></tr>
+            <tr><th><span>sub</span></th><td>Subscript Text</td><td>Typographical stylistic choice</td></tr>
+            <tr><th><span>sup</span></th><td>Superscript Text</td><td>Another typographical presentation style</td></tr>
+        </table><br><a name="b3">
+
+        <br><hr><br>
+
+        <center><a href="h3.html"><input type="button" value="Example: Text Styles" class="input2"></a><br></center>
+    </div>
+
+    <div style="padding:0px 20px;">
+        <hr>
+        <h2>Lists</h2><a name="4">
+        <hr><br>
+    </div>
+
+    <div class="content">
+        <h3>How To Make an HTML List?</h3>
+        In web design, there are 3 different types of lists which you may wish to add to your site.<br>
+        <ul><li>Ordered List</li>
+        <li>Unordered List</li>
+        <li>Definition List</li></ul>
+
+        <br><hr><br>
+
+        <h3>Ordered List:</h3>
+        <ul><li>The first is an <span>&lt;ol&gt;</span>, this is an ordered list of contents. For example: </li><br>
+            <ol><li>An item</li>
+            <li>Another item</li>
+            <li>Another goes here</li></ol><br>
+            <li>Inside the <span>&lt;ol&gt;</span> tag we list each item on the list inside <span>&lt;li&gt;</span> <span>&lt;/li&gt;</span> tags.</li><br>
+            <li>For example:<br>
+            <span>&lt;ol&gt;<br>
+                &lt;li&gt;An item &lt;/li&gt;<br>
+                &lt;li&gt;Another item &lt;/li&gt;<br>
+                &lt;li&gt;Another goes here &lt;/li&gt;<br>
+                &lt;/ol&gt;</span></li><br>
+        </ul>
+
+        <br><hr><br>
+
+        <h3>Unordered List:</h3>
+        <ul>
+            <li>The second type of list that you may wish to include is an <span>&lt;ul&gt;</span> unordered list.</li><br>
+            <li>This is better known as a bullet point list and contains no numbers.</li><br>
+            <ul><li>This is</li>
+                <li>an unordered</li>
+                <li>list</li></ul><br>
+            <li>For example:<br>
+            <span>&lt;ol&gt;<br>
+                &lt;li&gt;This is&lt;/li&gt;<br>
+                &lt;li&gt;an unordered &lt;/li&gt;<br>
+                &lt;li&gt;list&lt;/li&gt;<br>
+                &lt;/ol&gt;</span></li><br>
+        </ul>
+
+        <br><hr><br>
+
+        <h3>Definition List</h3>
+            <ul><li>Finally, you may wish to include a definition list <span>&lt;dl&gt;</span> on your page.</li><br>
+            <li>An example of a <span>&lt;dl&gt;</span> list is as follows:</li>
+            <dl>
+                <dt>HTML</dt><dd>Hypertext markup language is a programming language used to create web pages and is rendered by a web browser.</dd>
+            </dl><br>
+            <li>The code used for the above is as follows:<br>
+            <span>&lt;dl&gt;<br>
+                &lt;dt&gt;Item&lt;/dt&gt;<br>
+                &lt;dd&gt;The definition goes here&lt;/dd&gt;<br><a name="b4">
+                &lt;/dl&gt;</span></li><br>
+        </ul>
+
+        <br><hr><br>
+
+        <center><a href="h4.html"><input type="button" value="Example: Lists" class="input2"></a><br></center>
+    </div>
+
+    <div style="padding:0px 20px;">
+        <hr>
+        <h2>Adding Tables</h2><a name="5">
+        <hr><br>
+    </div>
+
+    <div class="content">
+        <h3>What Does a Table Consist Of?</h3>
+        <ul>
+            <li>When drawing a table we must open an element with the <span>&lt;table&gt;</span> opening tag.<span>&lt;/li&gt;</span></li><br>
+            <li>Inside this tag, we structure the table using the table rows, <span>&lt;tr&gt;,</span> and cells, <span>&lt;td&gt;</span> and <span>&lt;th&gt;</span></li><br>
+            <li>An example of an HTML table is as follows:<br>
+                <span>&lt;table><br>
+                    &lt;tr><br>
+                    &lt;td>Row 1 - Column 1&lt;/td><br>
+                    &lt;td>Row 1 - Column 2 &lt;/td><br>
+                    &lt;/tr><br>
+                    &lt;tr><br>
+                    &lt;td>Row 2 - Column 1&lt;/td><br>
+                    &lt;td>Row 2 - Column 2&lt;/td><br>
+                    &lt;/tr><br>
+                    &lt;/table></span>
+            <li>Table tag attributes:</li>
+        </ul>
+        <table align="center" width="90%" border="2px" bordercolor="white" cellpadding="10px" cellspacing="0px">
+            <tr><th><u>Attribute</u></th><th><u>Purpose</u></th></tr>
+            <tr><th><span>width</span></th><td>adjust the width of the table</td></tr>
+            <tr><th><span>height</span></th><td>adjust the height of the table</td></tr>
+            <tr><th><span>border</span></th><td>adjust the border of the table</td></tr>
+            <tr><th><span>bordercolor</span></th><td>adjust the bordercolor of the table</td></tr>
+            <tr><th><span>rowspan</span></th><td>merges vertical cells, used in th,tr tag</td></tr>
+            <tr><th><span>colspan</span></th><td>merges horizontal cells, used in th,tr tag</td></tr>
+            <tr><th><span>cellpadding</span></th><td>adjust the space between cell data and border of the table</td></tr>
+            <tr><th><span>cellspacing</span></th><td>adjust the space between cellsof the table</td></tr>
+        </table><br><a name="b5">
+
+        <br><hr><br>
+
+        <center><a href="h5.html"><input type="button" value="Example: Tables" class="input2"></a><br></center>
+    </div>
+
+    <div style="padding:0px 20px;">
+        <hr>
+        <h2>Linking Documents</h2><a name="6">
+        <hr><br>
+    </div>
+
+    <div class="content">
+        <h3>HTML Links - Hyperlinks</h3>
+        <ul>
+            <li>HTML links are hyperlinks.</li><br>
+            <li>You can click on a link and jump to another document</li><br>
+            <li>The HTML <span>&lt;a&gt;</span> tag defines a hyperlink. It has the following syntax:<br>
+                <span>&lt;a href="url">link text&lt;/a></span></li><br>
+            <li>The most important attribute of the <span>&lt;a&gt;</span> element is the <span>href</span> attribute, which indicates the link's destination.</li><br>
+            <li>The link text is the part that will be visible to the reader. Clicking on the link text, will send the reader to the specified URL address.</li><br>
+            <li>By default:</li><br>
+            <ol><li>An unvisited link is underlined and blue</li>
+                <li>A visited link is underlined and purple</li>
+                <li>An active link is underlined and red</li></ol><br>
+            <li>Anchor Tag attributes:</li>
+        </ul>
+        <table align="center" width="90%" border="2px" bordercolor="white" cellpadding="10px" cellspacing="0px">
+            <tr><th><u>Attribute</u></th><th><u>Purpose</u></th></tr>
+            <tr><th><span>href</span></th><td>indicates the link destination, can be a website or document</td></tr>
+            <tr><th><span>name</span></th><td>markes the current location</td></tr>
+            <tr><th><span>target</span></th><td>used to jump to a given location or new tab using <b>_blank</b></td></tr>
+        </table><br><a name="b6"></a>
+
+        <br><hr><br>
+
+        <center><a href="h6.html"><input type="button" value="Example: Links" class="input2"></a><br></center>
+    </div>
+
+    <div style="padding:0px 20px;">
+        <hr>
+        <h2>Adding Graphics</h2><a name="7">
+        <hr><br>
+    </div>
+
+    <div class="content">
+        <h3>HTML Images Syntax:</h3>
+        <ul><li>The HTML <span>&lt;img&gt;</span> tag is used to embed an image in a web page.</li><br>
+        <li>The <span>&lt;img&gt;</span> tag has two required attributes:<br><br>
+            <ol>
+                <li><span>src</span> - Specifies the path to the image</li>
+                <li><span>alt</span> - Specifies an alternate text for the image</li><br>
+            </ol>
+        <li>Syntax:<br><span>&lt; img src="url" alt="img1" &gt;</span></li><br>
+        <li>Other attributes:</li>
+        </ul>
+        <table align="center" width="90%" border="2px" bordercolor="white" cellpadding="10px" cellspacing="0px">
+            <tr><th><u>Attribute</u></th><th><u>Purpose</u></th></tr>
+            <tr><th><span>width</span></th><td>adjust the width of the image</td></tr>
+            <tr><th><span>height</span></th><td>adjust the height of the image</td></tr>
+            <tr><th><span>border</span></th><td>add a border to the image</td></tr>
+            <tr><th><span>bordercolor</span></th><td>adjust the bordercolor of the image</td></tr>
+        </table><br>
+
+        <br><hr><br>
+
+        <h3>Image Mapping:</h3>
+        <ul>
+            <li>The HTML <span>&lt;map&gt;</span> tag defines an image map.</li><br>
+            <li>An image map is an image with clickable areas.</li><br>
+            <li>The areas are defined with one or more <span>&lt;area&gt;</span> tags.</li>
+        </ul>
+
+        <br><hr><br>
+
+        <h3>How Does it Work?</h3>
+        <ol>
+            <li>To create an image map you need an image.The image is inserted using the <span>&lt;img&gt;</span> tag.</li><br>
+            <li>The only difference from other images is that you must add a <span>usemap</span> attribute:<br>
+                <span>&lt;img src="img.jpg" usemap="#workmap"></span></li><br>
+            <li>The <span>usemap</span> value starts with a hash tag <span>#</span> followed by the name of the image map, and is used to create a relationship between the image and the image map.</li><br>
+            <li>The <span>&lt;map></span> element is used to create an image map, and is linked to the image by using the required name attribute:<br>
+                <span>&lt;map name="workmap"></span></li><br>
+            <li>A clickable area is defined using an <span>&lt;area></span> element.</li><br>
+            <li>You must define the shape of the clickable area, and you can choose one of these values:</li><br>
+            <ul><li><span>rect</span> - defines a rectangular region</li>
+                <li><span>circle</span> - defines a circular region</li>
+                <li><span>poly</span> - defines a polygonal region</li>
+                <li><span>default</span> - defines the entire region</li></ul><br>
+            <li>You must also define some coordinates to be able to place the clickable area onto the image.</li><br>
+            <ul><li>The coordinates for shape="rect" come in pairs, one for the x-axis and one for the y-axis.</li>
+                <li>To add a circle area, find its center and height.</li>
+                <li>The shape="poly" contains several coordinate points, which creates a shape formed with straight lines.</li></ul><br>
+            <li>Example:<br>
+                <span>&lt;img src="workplace.jpg" usemap="#workmap"><br>
+                &lt;map name="workmap"><br>
+                &lt;area shape="poly" coords="34,44,270,350,67" href="computer.htm"><br>
+                &lt;area shape="rect" coords="290,333" href="phone.htm"><br>
+                &lt;area shape="circle" coords="337,300" href="coffee.htm"><br>
+                &lt;/map></span></li><a name="b7">
+        </ol><br>
+
+        <br><hr><br>
+
+        <center><a href="h7.html"><input type="button" value="Example: Adding Graphics" class="input2"></a><br></center>
+        
+    </div>
+
+    <div style="padding:0px 20px;">
+        <hr>
+        <h2>Adding Frames</h2><a name="8">
+        <hr><br>
+    </div>
+
+    <div class="content">
+        <h3>HTML frameset Tag:</h3>
+        <ul>
+            <li>The <span>&lt;frameset></span> tag in HTML is used to define the frameset.</li><br>
+            <li>The <span>&lt;frameset></span> element contains one or more frame elements.</li><br>
+            <li>Each element can hold a separate document.</li><br>
+            <li>Syntax:<br>
+                <span>&lt;frameset cols = "pixels|%|*"></span></li><br>
+            <li>The <span>&lt;frameset></span> tag is not supported in HTML5.</li><br>
+            <li>The list of frameset attributes are:</li><br>
+            <ol>
+                <li><span>cols</span> - The cols attribute is used to create vertical frames in a web browser.</li>
+                <li><span>rows</span> - The rows attribute is used to create horizontal frames in the web browser.</li>
+                <li><span>border</span> - This attribute of frameset tag defines the width of the border of each frame in pixels. Zero value is used for no border.</li>
+                <li><span>bordercolor</span> - Adjusts the border color.</li>
+            </ol><br>
+            <li>When frameset tag is used body tag is not used.</li>
+        </ul><br>
+
+        <br><hr><br>
+
+        <h3>HTML frame Tag:</h3>
+        <ul>
+            <li>This tag is used to add frames in the frameset.</li><br>
+            <li>Its attributes are:</li><br>
+            <ol>
+                <li><span>src</span> - It is used to link the URL of the website or document.</li>
+                <li><span>name</span> - It is used to name the frame. It is used to target named frames using anchor tag.</li>
+            </ol><br>
+            <li>Example:<br>
+                <span>&lt;frameset cols = "50%, 50%,"><br>
+                &lt;frame name="top" src="a.html"><br>
+                &lt;frame name="main" src="b.html"> <br>      
+                &lt;/frameset></span><br>
+                This will divide the window into 2 vertical columns.</li><br><a name="b8">
+        </ul>
+
+        <br><hr><br>
+
+        <center><a href="h8.html"><input type="button" value="Example: Frameset" class="input2"></a><br></center>
+    </div>
+
+    <div style="padding:0px 20px;">
+        <hr>
+        <h2>Creating Forms</h2><a name="9">
+        <hr><br>
+    </div>
+
+    <div class="content">
+        <h3>HTML Forms:</h3>
+        <ul>
+            <li>The HTML <span>&lt;form></span> element is used to create an HTML form for user input:</li><br>
+            <li>The <span>&lt;form></span> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.</li><br>
+            <li>The HTML <span>&lt;input></span> element is the most used form element.</li><br>
+            <li>An <span>&lt;input></span> element can be displayed in many ways, depending on the <span>type</span> attribute.<br>
+                Here are some examples:</li><br>
+                <table align="center" width="100%" border="2px" bordercolor="white" cellpadding="10px" cellspacing="0px">
+                    <tr><th><u>Type</u></th><th><u>Description</u></th></tr>
+                    <tr><th><span>&lt;input type="text"></span></th><td>Displays a single-line text input field</td></tr>
+                    <tr><th><span>&lt;input type="radio"></span></th><td>Displays a radio button (for selecting one of many choices)</td></tr>
+                    <tr><th><span>&lt;input type="checkbox"></span></th><td>Displays a checkbox (for selecting zero or more of many choices)</td></tr>
+                    <tr><th><span>&lt;input type="submit"></span></th><td>Displays a submit button (for submitting the form)</td></tr>
+                    <tr><th><span>&lt;input type="button"></span></th><td>Displays a clickable button</td></tr>
+                    <tr><th><span>&lt;input type="reset"></span></th><td>Displays a reset button</td></tr>
+                    <tr><th><span>&lt;input type="password"></span></th><td>Displays a password field</td></tr>
+                    <tr><th><span>&lt;textarea></span></th><td>Defines a multiline text area</td></tr>
+                    <tr><th><span>&lt;select></span></th><td>Defines a drop-down list</td></tr>
+                    <tr><th><span>&lt;option></span></th><td>Defines an option in a drop-down list</td></tr>                    
+                </table><br><br>
+            <li>Input element attributes:</li><br>
+            <table align="center" width="90%" border="2px" bordercolor="white" cellpadding="10px" cellspacing="0px">
+                <tr><th><u>Attribute</u></th><th><u>Description</u></th></tr>
+                <tr><th><span>checked</span></th><td>Specifies that an input field should be pre-selected when the page loads</td></tr>
+                <tr><th><span>disabled</span></th><td>Specifies that an input field should be disabled</td></tr>
+                <tr><th><span>size</span></th><td>Specifies the width (in characters) of an input field</td></tr>
+                <tr><th><span>value</span></th><td>Specifies the default value for an input field</td></tr>
+                <tr><th><span>name</span></th><td>Specifies the name of the form</td></tr>
+                <tr><th><span>id</span></th><td>Specifies the id of the element</td></tr>
+                <tr><th><span>action</span></th><td>Specifies where to send the form-data when a form is submitted</td></tr>
+            </table><br><br>
+            <li>The <span>method</span> attribute specifies the HTTP method to be used when submitting the form data.</li><br>
+            <ol><li>The form-data can be sent as URL variables (<span>with method="get"</span>) or as HTTP post transaction (<span>with method="post"</span>).</li>
+                <li>The default HTTP method when submitting form data is GET.</li>
+                <li><span>Get: </span>Appends the form data to the URL, in name/value pairs. NEVER use GET to send sensitive data!</li>
+                <li><span>Post: </span>Appends the form data inside the body of the HTTP request (the submitted form data is not shown in the URL)</li><a name="b9">
+            </ol>
+        </ul><br>
+
+        <br><hr><br>
+        
+        <center><a href="h9.html"><input type="button" value="Example: Forms" class="input2"></a></center>
+    </div>
+
+    <div style="padding:0px 20px;">
+        <br><hr><br>        
+    </div><br>
+
+    <div id="mySidenav" class="sidenav">
+    <div style="position:sticky;top:0;float: right;">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#1" class="closebtn">&#8679</a>
+        <a href="#9" class="closebtn">&#8681</a>
+    </div>
+    <a href="#1" style="padding:20px">1.Introduction</a>
+    <a href="#2" style="padding:20px">2.Formatting Document</a>
+    <a href="#3" style="padding:20px">3.Text Styles</a>
+    <a href="#4" style="padding:20px">4.Lists</a>
+    <a href="#5" style="padding:20px">5.Adding Table</a>
+    <a href="#6" style="padding:20px">6.Linking Document</a>
+    <a href="#7" style="padding:20px">7.Adding Graphics</a>
+    <a href="#8" style="padding:20px">8.Adding Frames</a>
+    <a href="#9" style="padding:20px">9.Forms</a>
+    </div>
+    
+
+</body>
+<script>
+    window.onscroll = function () { myFunction() };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+
+</html>
